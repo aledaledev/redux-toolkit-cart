@@ -1,0 +1,45 @@
+.navbar{
+    padding: 1rem 2rem;
+    background: linear-gradient(rgb(32, 17, 49), #242424);
+    border-bottom: 5px groove #535353;
+}
+
+.navbar>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.cartButton{
+    width: 4rem;
+    height: 4rem;
+    border: 1px groove #535353;
+    border-radius: 50%;
+    position: relative;
+}
+
+.cartButton [name]{
+    background: transparent;
+    transform: scale(2.5) translateY(.05rem);
+}
+
+.amountCircle{
+    position: absolute;
+    bottom: -.3rem;
+    left: -.3rem;
+}
+
+.amountCircle span{
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #535353;
+    font-size: 1.2rem;
+    font-weight: 500;
+}

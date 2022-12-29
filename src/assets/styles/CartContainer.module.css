@@ -1,0 +1,89 @@
+.cartSection {
+  margin: 2rem 0.5rem;
+}
+
+.cartTitle h3 {
+  text-transform: capitalize;
+  margin: 2rem 0 1rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+.itemsContainer {
+  padding: 1rem 1rem 2rem;
+  position: relative;
+}
+
+.itemsContainer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  border-bottom: 1px solid rgb(65, 65, 65);
+}
+
+.totalPrice {
+    margin: 2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalPrice h4{
+    margin: 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.totalPrice span{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cartSection>button{
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    border: none;
+    padding: 1rem 1.5rem;
+    transition: background .2s;
+}
+
+.advice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.advice h4{
+    margin: 0;    
+    font-size: 2rem;
+}
+
+.advice span{
+    display: block;
+    animation: thunder infinite 1s;
+}
+
+.advice [name]{
+    transform: scale(2);
+}
+
+@keyframes thunder {
+    0% {
+        transform: translateX(-.5rem) translateY(.5rem);
+    }
+    50%{
+        transform: translateX(.5rem) translateY(-.5rem);
+    }
+    100%{
+        transform: translateX(-.5rem) translateY(.5rem);
+    }
+}
