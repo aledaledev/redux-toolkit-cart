@@ -8,7 +8,6 @@ const {navbar, title, cartButton, amountCircle} = styles
 const Navbar = () => {
 
     const {amount} = useSelector(store => store.cart) as CartState
-    console.log(styles);
     
     return (
       <nav className={navbar}>

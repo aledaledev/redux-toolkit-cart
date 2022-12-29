@@ -1,14 +1,23 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { CartState } from '../types'
 import CartItem from './CartItem'
 import styles from '../assets/styles/CartContainer.module.css'
+import { useModal } from '../context/ModalContext'
 
 const {cartSection,cartTitle,advice,itemsContainer,totalPrice} = styles
 
 const CartContainer = () => {
 
   const {cartItems, amount, total} = useSelector(store => store.cart) as CartState
+
+  const {modal,setModal} = useModal()
+
+  const showModal = () => {
+    setModal(!modal)
+    console.log('no pasa nada');
+    
+  }
 
   return (
     <section className={cartSection}>
@@ -31,7 +40,7 @@ const CartContainer = () => {
           <h4>total </h4>
           <span>$ {total}</span>
         </div>
-        <button>clear cart</button>
+        <button onClick={showModal}>clear cart</button>
       </>
       }
 

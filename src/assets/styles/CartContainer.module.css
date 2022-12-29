@@ -74,6 +74,7 @@
 
 .advice [name]{
     transform: scale(2);
+    background: transparent;
 }
 
 @keyframes thunder {

@@ -16,8 +16,23 @@
 }
 
 .productTitle{
+    margin: .5rem 0;
     text-align: left;
     text-transform: capitalize;
+}
+
+.infoItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoItem button{
+    align-self: center;
+    border: none;
+    padding: .3rem;
+    text-transform: capitalize;
+    color: rgb(194, 194, 194);
 }
 
 .productPrice{

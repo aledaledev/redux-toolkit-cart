@@ -1,0 +1,60 @@
+.backsideModal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: hsla(0, 0%, 9%, 0.706); 
+    z-index: 1;
+    display: flex;
+}
+
+.modal{
+    margin: auto;
+    max-width: 18rem;
+    background: rgb(241, 239, 239);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal h4{
+    margin: 0;
+    color: rgb(44, 43, 43);
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.btnGroup{
+    display: flex;
+    gap: 2rem;
+}
+
+.btnGroup button{
+    border: none;
+    background: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: border .2s;
+    padding: .4rem .6rem;
+    border-radius: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btnGroup button:first-child{
+    color: rgb(26, 139, 26);
+}
+
+.btnGroup button:first-child:hover{
+    border: 1px solid rgb(26, 139, 26);
+}
+
+.btnGroup button:last-child{
+    color: crimson;
+}
+
+.btnGroup button:last-child:hover{
+    border: 1px solid crimson;
+}
