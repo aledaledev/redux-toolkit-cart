@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import dataItems from '../../data/dataItems.json'
 
 const initialState = {
-    cartItems: [],
+    cartItems: dataItems,
     amount: 0,
     total: 0,
     isLoading: true
